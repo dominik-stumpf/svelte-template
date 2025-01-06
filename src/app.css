@@ -88,14 +88,16 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+* {
+  @apply border-border;
+}
 
-  body {
-    @apply min-h-screen bg-background font-sans text-foreground antialiased accent-primary selection:bg-foreground selection:text-background;
-  }
+body {
+  @apply min-h-screen bg-background font-sans text-foreground antialiased accent-primary selection:bg-foreground selection:text-background;
+}
+
+button {
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
