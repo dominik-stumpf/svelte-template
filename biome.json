@@ -1,0 +1,47 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.1/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": "info"
+      },
+      "style": {
+        "noNonNullAssertion": "warn"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "info"
+      },
+      "complexity": { "noForEach": "warn" },
+      "correctness": {
+        "noUnusedVariables": "info",
+        "useExhaustiveDependencies": "warn",
+        "noUnusedImports": "info"
+      }
+    }
+  },
+  "files": {
+    "include": ["src", ".storybook"],
+    "ignore": [
+      "node_modules",
+      ".next",
+      "public",
+      ".out",
+      "package-lock.json",
+      "*.css",
+      ".vercel"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "trailingCommas": "all"
+    }
+  }
+}
